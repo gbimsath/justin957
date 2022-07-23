@@ -54,7 +54,7 @@ async def save_group(bot, message):
                     except:
                         pass
                 temp.MELCOW['welcome'] = await message.reply(
-                    text = f"<b>Hey , {u.mention}, Welcome to {message.chat.title}</b>",
+                    caption = f"<b>Hey , {u.mention}, Welcome to {message.chat.title}</b>",
                     photo = "https://telegra.ph/file/56e988f27783449a6ed61.jpg" )
 
 
