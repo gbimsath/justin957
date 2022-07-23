@@ -55,9 +55,9 @@ async def save_group(bot, message):
                         await (temp.MELCOW['welcome']).delete()
                     except:
                         pass
-                temp.MELCOW['welcome'] = await message.reply_text(
-                    caption = f"<b>Hey , {u.mention}, Welcome to {message.chat.title}</b>",
-                    photo = "https://telegra.ph/file/56e988f27783449a6ed61.jpg" )
+                temp.MELCOW['welcome'] = await message.reply(
+                     f"<b>Hey , {u.mention}, Welcome to {message.chat.title}</b>"
+                     )
 
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
